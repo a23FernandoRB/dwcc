@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicios UD2</title>
+        <script src="funciones.js"></script>
+        <link rel="shortcut icon" href="#">
+    </head>
+    <body>
+        <h1>
+            Actividades JavaScript
+        </h1>
+
+        <hr/>   
+
+        <h2>Actividade 1</h2>
+        <p> Os resultados amósanse por consola</p>
+        <p>
+            Táboa do 9
+            <button type="button" onclick="tabla9()">Táboa do 9</button>
+        </p>
+        <p>    
+            Fibonacci
+            <button type="button" onclick="printFibonacci()">Fibonacci</button>
+        </p>
+        <p>    
+            Numeros primos
+            <form onsubmit="esPrimo()">    
+                <input id="numero" type="number" required/>
+                <input type="submit" value="Comprobar primo">
+            </form>
+        </p>
+
+        <hr/>
+
+        <h2> Actividade 2</h2>
+        <p>Usando If-Else
+            <button type="button" onclick="edadIf()">Edad</button>
+            <div id="resedadif">
+            </div>
+            
+        </p>
+       <p>Usando Switch-Case
+        <button type="button" onclick="edadSwitch()">Edad</button>
+            <div id="resedadswitch">
+            </div>
+        </p>
+
+        <hr/>
+        
+        <h2> Actividade 3</h2>
+        <button  type="button" onclick="printoperaciones()">resultado</button>
+        <ul>
+            <li>125/8=
+                <p id="operacion1"></p>
+            </li>
+            <li>40x4=
+                <p id="operacion2"></p>
+            </li>
+            <li>25/2
+                <p id="operacion3"></p>
+            </li>
+            <li>10x16=
+                <p id="operacion4"></p>
+            </li>
+        </ul>
+    </body>
+</html>
