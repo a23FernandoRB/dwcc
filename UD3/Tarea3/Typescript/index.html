@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 3 UD3</title>
+        <link rel="shortcut icon" href="#">
+        <script src="main.js"></script>   
+    </head>
+<body>
+    <h1>Ejercicio 1</h1>
+    <form onsubmit="getName()">
+        <label for="name">Escribe tu nombre y apellidos: </label>
+        <input type="text" name="nombreCompleto" id="nombreCompleto">
+        <input type="submit">
+    </form >
+
+    <p>Número de caracteres:</p>
+    <p id="largoNom"></p>
+    <hr/>
+    <p>Número de caracteres sin espacios: </p>
+    <p id="largoNomSin"></p>
+    <hr/>
+    <p>Nombre y apellidos en minúsculas:  </p>
+    <p id="nombreMinus"></p>
+    <hr/>
+    <p>Nombre y apellidos en mayúsculas: </p>
+    <p id="nombreMayus"></p>
+    <hr/>
+    <p>Nombre: </p>
+    <p id="soloNombre"></p>
+    <hr/>
+    <p>Primer apellido: </p>
+    <p id="soloApellido1"></p>
+    <hr/>
+    <p>Segundo apellido:</p>
+    <p id="soloApellido2"></p>
+    <hr/>
+    <p>Propuesta de nombre de usuario:</span></p>
+    <p id="usernamePropuesto"></p>
+    <hr/>
+
+    <h1>Ejercicio 2</h1>
+
+    <form onsubmit="controlContrasena()">
+        <label for="name">Escribe tu contraseña: </label>
+        <input type="text" name="contrasenaPropuesta" id="contrasenaPropuesta">
+        <input type="submit">
+    </form >
+    <p id="contrasenaValidada"></p>
+</body>
+</html>

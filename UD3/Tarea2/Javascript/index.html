@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <link rel="shortcut icon" href="#">
+    <script src="main.js"></script> 
+</head>
+<body>
+    <p > Dias restantes hasta el 25 de junio
+        <button onclick="diasRestantes()">Pulse aquí</button>
+    </p>
+    <p>Indique su fecha de cumpleaños
+        <form>
+            <label>Selecciona la fecha</label>
+            <input type="date" id="fechacumpleanos">
+            <input type="submit" onclick="cumpleanos2100()" value="Aceptar">
+        </form>
+    </p>
+    <p>
+        <form onsubmit="selectorFormato()">
+            <label for="formato">Elige el formato para la fecha actual: </label>
+            <select name="formato" id="formato">
+                <option value="1">xx/xx/xx</option>
+                <option value="2">Completo en español</option>
+                <option value="3">Completo en inglés</option>
+            </select>
+            <input type="submit" value="Enviar">
+        </form>
+    </p>
+    <p id="fecha">
+
+    </p>
+    <p>
+        <form onsubmit="formatoHora()">
+            <label for="formatHora">Elige el formato para la fecha actual: </label>
+            <select name="formatHora" id="formatHora">
+                <option value="1">24 horas</option>
+                <option value="2">AM/PM</option>
+            </select>
+            <input type="submit" value="Enviar">
+        </form>
+    </p>
+    <p id="hora">
+
+    </p>
+    
+</body>
+</html>
