@@ -51,15 +51,20 @@ function anadirfinal(){
 //Eliminar elemento al principio y decir cual es
 
 function eliminarprincipio(){
-    alert("Se ha eliminado el elemento del principio: " + paises[0])
-    paises.shift();
+    if(numeroelementos()>0){
+        alert("Se ha eliminado el elemento del principio: " + paises[0]);
+        paises.shift();}
+    else alert("No se pudo eliminar. La lista no contiene elementos.");
+
 }
 
 //eliminar el ultimo elemento y decir cual es
 
 function eliminarfinal(){
-    alert("Se ha eliminado el elemento del final: " + paises[(numeroelementos()-1)])
-    paises.pop();
+    if(numeroelementos()>0){
+        alert("Se ha eliminado el elemento del final: " + paises[(numeroelementos()-1)]);
+        paises.pop();}
+    else alert("No se pudo eliminar. La lista no contiene elementos.");    
 }
 
 //enseñar el elemento que indica el usuario segun su posicion

@@ -57,7 +57,8 @@ function anadirfinal(){
 function eliminarprincipio(){
     if(numeroelementos()>0){
         alert("Se ha eliminado el elemento del principio: " + paises[0]);
-        paises.shift();} else alert("No se pudo eliminar. La lista no contiene elementos.");
+        paises.shift();}
+    else alert("No se pudo eliminar. La lista no contiene elementos.");
 
 }
 
