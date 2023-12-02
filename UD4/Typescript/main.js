@@ -62,6 +62,29 @@ function ensenarPosicion() {
     else
         alert("posicion no válida");
 }
+//Enseñar la posicion en la que se encuentra un elemento introducido por el usuario
+function determinarPosicion() {
+    this.event.preventDefault();
+    var elementoABuscar = document.getElementById("elementobuscado").value;
+    var encontrado = 0;
+    var resultado;
+    for (var i = 0; i <= numeroelementos(); i++) {
+        if (elementoABuscar == paises[i]) {
+            encontrado++;
+            resultado = i;
+        }
+    }
+    if (encontrado === 1) {
+        document.getElementById("posicionElemento").innerText = resultado + 1;
+    }
+    else if (encontrado > 1) {
+        alert("El elemento está duplicado");
+    }
+    else {
+        alert("No se encontró el elemento en la lista");
+    }
+    ;
+}
 // enseñar elementos que se encuentren entre dos posiciones indicadas por el usuario
 function ensenarEntreElementos() {
     this.event.preventDefault();
